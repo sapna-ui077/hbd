@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adventure Awaits</title>
+
+<link rel="stylesheet" href="css/adventure.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🌍 Adventure Awaits</h1>
+
+<p>
+Some people collect things...
+You collect moments.
+May life always take you somewhere beautiful.
+</p>
+
+<div class="cards">
+
+<div class="card">🌅 Watch More Sunrises</div>
+
+<div class="card">🏔️ Climb New Mountains</div>
+
+<div class="card">🌊 Listen To The Ocean</div>
+
+<div class="card">🚗 Take Random Road Trips</div>
+
+<div class="card">☕ Discover Hidden Cafés</div>
+
+<div class="card">📸 Capture Beautiful Memories</div>
+
+<div class="card">🌌 Sleep Under The Stars</div>
+
+<div class="card">🎒 Never Stop Exploring</div>
+
+</div>
+
+<a href="sky.html" class="btn">
+Next Adventure ✈️
+</a>
+
+</div>
+<audio id="bgMusic" autoplay loop>
+    <source src="music/birthday.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+const bgMusic = document.getElementById("bgMusic");
+
+document.addEventListener("click", () => {
+    bgMusic.play().catch(() => {});
+}, { once: true });
+</script>
+</body>
+</html>

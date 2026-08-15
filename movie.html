@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>The Movie 🎬</title>
+
+<link rel="stylesheet" href="css/movie.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="overlay">
+
+<h3>COMING SOON...</h3>
+
+<h1>THE LEGEND</h1>
+
+<h2>ROSHAN ❤️</h2>
+
+<p>
+
+The funniest person...
+
+The kindest soul...
+
+The Birthday King...
+
+The Hero of this Story...
+
+</p>
+
+<a href="wheel.html">
+
+Watch Next Scene ▶
+
+</a>
+
+</div>
+<audio id="bgMusic" autoplay loop>
+    <source src="music/birthday.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+const bgMusic = document.getElementById("bgMusic");
+
+document.addEventListener("click", function () {
+    bgMusic.play().catch(()=>{});
+}, { once: true });
+</script>
+<audio id="bgMusic" autoplay loop>
+    <source src="music/birthday.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+const bgMusic = document.getElementById("bgMusic");
+
+document.addEventListener("click", () => {
+    bgMusic.play().catch(() => {});
+}, { once: true });
+</script>
+</body>
+
+</html>

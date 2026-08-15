@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tea Break</title>
+
+<link rel="stylesheet" href="css/tea.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>☕ Tea Time</h1>
+
+<h2>
+
+Every adventure deserves
+a peaceful tea break.
+
+</h2>
+
+<div class="cup">
+
+☕
+
+</div>
+
+<p>
+
+Some moments don't need luxury.
+
+Just a warm cup of tea,
+
+good music,
+
+and peace.
+
+</p>
+
+<a href="music.html">
+
+Continue 🎵
+
+</a>
+
+</div>
+<audio id="bgMusic" autoplay loop>
+    <source src="music/birthday.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+const bgMusic = document.getElementById("bgMusic");
+
+document.addEventListener("click", () => {
+    bgMusic.play().catch(() => {});
+}, { once: true });
+</script>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>Letter ❤️</title>
+
+<link rel="stylesheet" href="css/letter.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="envelope">
+
+📩
+
+</div>
+
+<button id="open">
+
+Open My Letter ❤️
+
+</button>
+
+<div id="letter">
+
+<h2>Dear Roshan ❤️</h2>
+
+<p>
+
+Happy Birthday ❤️
+
+I don't know what the future holds,
+
+but I truly hope your day is filled
+
+with happiness, laughter, and countless smiles.
+
+Thank you for being you.
+
+✨
+
+</p>
+
+<a href="cake.html">
+
+Continue 🎂
+
+</a>
+
+</div>
+
+</div>
+
+<script src="js/letter.js"></script>
+<audio id="bgMusic" autoplay loop>
+    <source src="music/birthday.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+const bgMusic = document.getElementById("bgMusic");
+
+document.addEventListener("click", function () {
+    bgMusic.play().catch(()=>{});
+}, { once: true });
+</script>
+<audio id="bgMusic" autoplay loop>
+    <source src="music/birthday.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+const bgMusic = document.getElementById("bgMusic");
+
+document.addEventListener("click", () => {
+    bgMusic.play().catch(() => {});
+}, { once: true });
+</script>
+</body>
+</html>

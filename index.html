@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>The Birthday Hero</title>
+
+<link rel="stylesheet" href="css/hero.css">
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Cinzel:wght@700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Password Screen -->
+<div id="passwordScreen">
+    <div class="loginBox">
+
+        <h2>❤️ Welcome Roshan ❤️</h2>
+
+        <p>
+            A little surprise is waiting for you... 🎁
+            <br><br>
+            🔐 Hint: Think about this special day + the year.
+        </p>
+
+        <input type="password" id="password" placeholder="Enter Password">
+
+        <button onclick="checkPassword()">
+            Open Surprise ❤️
+        </button>
+
+        <p id="error"></p>
+
+    </div>
+</div>
+
+<div class="stars"></div>
+
+<div class="hero-card">
+
+    <h3>🎬 Presenting...</h3>
+
+    <h1>ROSHAN</h1>
+
+    <p class="subtitle">
+        The Boy of Today's Story ✨
+    </p>
+
+    <div class="badges">
+
+        <div>😂 Funniest Person</div>
+        <div>🎂 Birthday Boy</div>
+        <div>❤️ Movie Lover</div>
+
+    </div>
+
+    <br>
+
+    <a href="gallery.html" class="btn">
+        Continue ❤️
+    </a>
+
+</div>
+
+<audio id="bgMusic" loop>
+    <source src="music/birthday.mp3" type="audio/mpeg">
+</audio>
+
+<script src="js/cursor.js"></script>
+
+<script>
+
+// Background Music
+const bgMusic=document.getElementById("bgMusic");
+
+document.addEventListener("click",function(){
+
+bgMusic.play().catch(()=>{});
+
+},{once:true});
+
+// Password Check
+function checkPassword(){
+
+let pass=document.getElementById("password").value;
+
+if(pass==="roshan2026"){
+
+document.getElementById("passwordScreen").style.display="none";
+
+}else{
+
+document.getElementById("error").innerHTML="❌ Wrong Password";
+
+}
+
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>Lucky Wheel ❤️</title>
+
+<link rel="stylesheet" href="css/wheel.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<h1>Spin Your Birthday Luck 🎉</h1>
+
+<div class="wheel" id="wheel">
+
+🎡
+
+</div>
+
+<button id="spin">
+
+SPIN ❤️
+
+</button>
+
+<h2 id="result"></h2>
+
+<a href="memory.html" class="next">
+
+Next Surprise ➜
+
+</a>
+
+<script src="js/wheel.js"></script>
+<audio id="bgMusic" autoplay loop>
+    <source src="music/birthday.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+const bgMusic = document.getElementById("bgMusic");
+
+document.addEventListener("click", () => {
+    bgMusic.play().catch(() => {});
+}, { once: true });
+</script>
+</body>
+
+</html>
