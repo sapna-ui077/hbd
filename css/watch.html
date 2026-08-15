@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Luxury Watch ⌚</title>
+
+<link rel="stylesheet" href="css/watch.css">
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>⌚ Time Is Precious</h1>
+
+<p>
+Every second is a new memory.<br>
+Today, every second is all about you.<br><br>
+
+Happy Birthday Roshan ❤️
+</p>
+
+<div class="watch">
+⌚
+</div>
+
+<p>
+May your time always be filled with happiness,
+success, laughter and unforgettable moments. ✨
+</p>
+
+<a href="game.html" class="btn">
+Continue 🎮
+</a>
+
+</div>
+
+<!-- Background Music -->
+<audio id="bgMusic" loop>
+    <source src="music/birthday.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+const bgMusic = document.getElementById("bgMusic");
+
+document.addEventListener("click", function () {
+    bgMusic.play().catch(() => {});
+}, { once: true });
+</script>
+
+</body>
+</html>

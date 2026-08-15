@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Memory Book</title>
+
+<link rel="stylesheet" href="css/memory.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<h1>📖 Memory Book</h1>
+
+<div class="book">
+
+<div class="page">
+
+❤️
+<br><br>
+
+The best memories
+are still waiting
+to be created...
+
+</div>
+
+</div>
+
+<a href="quiz.html">
+
+Next ❤️
+
+</a>
+<audio id="bgMusic" autoplay loop>
+    <source src="music/birthday.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+const bgMusic = document.getElementById("bgMusic");
+
+document.addEventListener("click", () => {
+    bgMusic.play().catch(() => {});
+}, { once: true });
+</script>
+</body>
+
+</html>

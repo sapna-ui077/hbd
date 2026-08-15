@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday ❤️</title>
+
+<link rel="stylesheet" href="css/final.css">
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<canvas id="fireworks"></canvas>
+
+<div class="hearts"></div>
+
+<div class="container">
+
+<h2>You Made It ❤️</h2>
+
+<h1>🎉 Happy Birthday Roshan 🎉</h1>
+
+<img src="images/photo1.jpg.jpeg" class="final-photo" alt="Roshan">
+
+<p id="typing"></p>
+
+<p class="message">
+
+May this birthday bring new adventures,
+beautiful memories,
+lots of laughter,
+good music,
+peaceful tea breaks,
+and countless reasons to be happy.
+
+<br><br>
+
+Never stop smiling.<br>
+Never stop exploring.<br>
+Stay exactly the way you are.
+
+<br><br>
+
+✨ Happy Birthday Once Again ✨
+
+</p>
+
+<button onclick="showMessage()">
+One Last Click ❤️
+</button>
+
+<div id="secret">
+
+💖<br><br>
+
+Thank you for being the wonderful person you are.<br>
+Wishing you endless happiness today and always.<br>
+Have an unforgettable birthday.<br><br>
+
+🎂❤️
+
+</div>
+
+<br>
+
+<a href="goodbye.html" class="replay">
+One Last Surprise ❤️
+</a>
+<p class="ending">
+
+❤️ Thank you for taking this little journey.<br>
+I hope it made you smile.<br>
+Happy Birthday Once Again ❤️
+
+</p>
+
+<p class="credit">
+Made with ❤️ by Sapna
+</p>
+
+</div>
+
+<audio id="bgMusic" loop>
+<source src="music/birthday.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+const bgMusic=document.getElementById("bgMusic");
+
+document.addEventListener("click",()=>{
+bgMusic.play().catch(()=>{});
+},{once:true});
+</script>
+
+<script src="js/final.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.10.8/dist/index.umd.js"></script>
+
+<script>
+const container=document.getElementById("fireworks");
+
+const fireworks=new Fireworks.default(container,{
+rocketsPoint:{min:50,max:50},
+hue:{min:0,max:360},
+delay:{min:15,max:30},
+speed:2,
+acceleration:1.05,
+friction:0.96,
+gravity:1.5,
+particles:80,
+traceLength:3,
+explosion:5,
+autoresize:true
+});
+
+fireworks.start();
+</script>
+
+</body>
+</html>

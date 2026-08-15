@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Your Surprise Gift 🎁</title>
+
+<link rel="stylesheet" href="css/gift.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>A Special Gift For You ❤️</h1>
+
+<p>Click the Gift Box 🎁</p>
+
+<div id="giftBox">🎁</div>
+
+<div id="surprise">
+
+<h2>💖 Surprise!! 💖</h2>
+
+<p>
+
+Happy Birthday Roshan ❤️
+
+I hope your day is filled with happiness, laughter and lots of love.
+
+Thank you for being the wonderful person you are.
+
+This is just a small surprise made especially for you. 🥹❤️
+
+</p>
+
+<a href="final.html">Last Surprise 🎆</a>
+
+</div>
+
+</div>
+
+<script src="js/gift.js"></script>
+<audio id="bgMusic" autoplay loop>
+    <source src="music/birthday.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+const bgMusic = document.getElementById("bgMusic");
+
+document.addEventListener("click", () => {
+    bgMusic.play().catch(() => {});
+}, { once: true });
+</script>
+</body>
+</html>

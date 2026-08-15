@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Magic Door</title>
+
+<link rel="stylesheet" href="css/magic.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="stars"></div>
+
+<div class="container">
+
+<h1>✨ One Last Surprise ✨</h1>
+
+<p>Open the magical door ❤️</p>
+
+<div id="door">
+🚪
+</div>
+
+</div>
+
+<script src="js/magic.js"></script>
+<audio id="bgMusic" autoplay loop>
+    <source src="music/birthday.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+const bgMusic = document.getElementById("bgMusic");
+
+document.addEventListener("click", function () {
+    bgMusic.play().catch(()=>{});
+}, { once: true });
+</script>
+<audio id="bgMusic" autoplay loop>
+    <source src="music/birthday.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+const bgMusic = document.getElementById("bgMusic");
+
+document.addEventListener("click", () => {
+    bgMusic.play().catch(() => {});
+}, { once: true });
+</script>
+</body>
+</html>

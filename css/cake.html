@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Birthday Cake 🎂</title>
+
+<link rel="stylesheet" href="css/cake.css">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🎂 Happy Birthday Roshan ❤️</h1>
+
+<p>Make a wish and cut your birthday cake!</p>
+
+<div id="cake">
+🎂
+</div>
+
+<button id="cutCake">
+🎉 Cut The Cake
+</button>
+
+<div id="message" style="display:none;">
+
+<h2>🥳 Yayyyy!!</h2>
+
+<p>
+May your day be filled with laughter, happiness, good music,
+new adventures, hot tea, and unforgettable memories.
+Wishing you a birthday as amazing as you are. ❤️
+</p>
+
+<a href="gift.html">
+🎁 Open Your Gift
+</a>
+
+</div>
+
+</div>
+
+<script src="js/cake.js"></script>
+<audio id="bgMusic" autoplay loop>
+    <source src="music/birthday.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+const bgMusic = document.getElementById("bgMusic");
+
+document.addEventListener("click", function () {
+    bgMusic.play().catch(()=>{});
+}, { once: true });
+</script>
+<audio id="bgMusic" autoplay loop>
+    <source src="music/birthday.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+const bgMusic = document.getElementById("bgMusic");
+
+document.addEventListener("click", () => {
+    bgMusic.play().catch(() => {});
+}, { once: true });
+</script>
+</body>
+</html>

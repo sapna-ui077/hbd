@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>Night Sky</title>
+
+<link rel="stylesheet" href="css/stars.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<h1>✨ Wish Upon A Star ✨</h1>
+
+<p>Click any glowing star ❤️</p>
+
+<div class="sky">
+
+<div class="star">⭐</div>
+<div class="star">⭐</div>
+<div class="star">⭐</div>
+<div class="star">⭐</div>
+<div class="star">⭐</div>
+<div class="star">⭐</div>
+
+</div>
+
+<div id="message">
+
+🌙
+
+May every journey make you happier than the last.
+
+Keep smiling, keep laughing, and never stop exploring.
+
+❤️
+
+</div>
+
+<a id="next" href="final.html">
+
+Last Surprise 🎆
+
+</a>
+
+<script src="js/stars.js"></script>
+<audio id="bgMusic" autoplay loop>
+    <source src="music/birthday.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+const bgMusic = document.getElementById("bgMusic");
+
+document.addEventListener("click", () => {
+    bgMusic.play().catch(() => {});
+}, { once: true });
+</script>
+</body>
+
+</html>
